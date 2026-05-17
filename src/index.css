@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Syne:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&family=Michroma&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Syne", sans-serif;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-angular: "Rajdhani", sans-serif;
+  --font-block: "Michroma", sans-serif;
+  --font-classyco: "Archivo", sans-serif;
+  
+  --color-boutique-white: #ffffff;
+  --color-boutique-black: #080808;
+  --color-street-accent: #4f46e5;
+}
+
+body {
+  @apply bg-black text-white font-sans antialiased selection:bg-street-accent selection:text-white;
+}
+
+/* QB One Medium Condensed Match */
+.font-classyco {
+  font-family: "Archivo", sans-serif;
+  font-variation-settings: "wdth" 75, "wght" 500;
+  @apply uppercase;
+}
+
+.heading-bold {
+  @apply font-serif font-extrabold uppercase tracking-tighter leading-[0.9];
+}
+
+.nav-link {
+  @apply text-[11px] uppercase tracking-[0.2em] hover:text-street-accent transition-colors font-bold text-white/80;
+}
+
+.button-primary {
+  @apply bg-white text-black px-8 py-4 text-xs font-bold uppercase tracking-widest transition-all rounded-none hover:bg-street-accent hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)];
+}
+
+.button-outline {
+  @apply border-2 border-white px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-none;
+}
+
+.marquee-text {
+  @apply whitespace-nowrap font-serif text-[120px] font-extrabold uppercase opacity-5 select-none pointer-events-none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 hover:bg-street-accent transition-colors;
+}

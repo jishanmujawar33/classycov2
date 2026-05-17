@@ -1,0 +1,64 @@
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer id="contact" className="bg-boutique-black pt-24 pb-12 border-t border-white/5">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div className="md:col-span-2">
+            <a href="#" className="text-3xl font-block tracking-tighter mb-8 block">
+              CLASSYCO<span className="text-street-accent">.</span>
+            </a>
+            <p className="text-white/40 max-w-sm font-sans mb-8 leading-relaxed">
+              Curated menswear for the next generation. Quality oversized fits, premium fabrics, 
+              and pure street culture in Kandivali East. Representing the city, defining the fit.
+            </p>
+            <div className="flex gap-4">
+              <a href="https://instagram.com/__classyco.__" className="p-3 bg-white/5 hover:bg-street-accent transition-colors">
+                <Instagram size={20} />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-angular text-white uppercase tracking-widest text-sm mb-8">Navigate</h4>
+            <ul className="space-y-4">
+              <li><a href="#lookbook" className="nav-link">Lookbook</a></li>
+              <li><a href="#tees" className="nav-link">Tees Collection</a></li>
+              <li><a href="#store" className="nav-link">The Boutique</a></li>
+              <li><a href="https://instagram.com/__classyco.__" className="nav-link">Instagram</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-angular text-white uppercase tracking-widest text-sm mb-8">Connect</h4>
+            <ul className="space-y-6">
+              <li className="flex items-center gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
+                <Phone size={18} className="text-street-accent" />
+                <span className="text-sm font-sans">+91 77384 99923</span>
+              </li>
+              <li className="flex items-center gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
+                <Mail size={18} className="text-street-accent" />
+                <span className="text-sm font-sans">contact@classyco.in</span>
+              </li>
+              <li className="flex items-start gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
+                <MapPin size={18} className="text-street-accent mt-1" />
+                <span className="text-sm font-sans">Shop 320, Hanuman Nagar,<br />Kandivali East, Mumbai</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6">
+          <p className="text-[10px] uppercase tracking-widest text-white/20">
+            © 2024 Classyco Menswear. All rights reserved.
+          </p>
+          <div className="flex gap-8">
+            <a href="#" className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
