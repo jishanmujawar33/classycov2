@@ -52,10 +52,20 @@ export default function Hero() {
               className="w-28 sm:w-40 h-auto opacity-100 brightness-[2.5]"
             />
           </div>
-          <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Mumbai Born • Street Bred</span>
-          <h1 className="heading-bold text-3xl sm:text-7xl md:text-[10vw] mb-8 text-white leading-tight">
-            The <br className="sm:hidden" /> New <br className="hidden md:block" /> Standard<span className="text-street-accent">.</span>
-          </h1>
+          <div className="relative">
+            <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Mumbai Born • Street Bred</span>
+            <h1 className="heading-bold text-3xl sm:text-7xl md:text-[10vw] mb-8 text-white leading-tight">
+              The <br className="sm:hidden" /> New <br className="hidden md:block" /> Standard<span className="text-street-accent">.</span>
+            </h1>
+            <motion.div 
+              initial={{ opacity: 0, rotate: -15, x: -20 }}
+              animate={{ opacity: 1, rotate: -15, x: 0 }}
+              transition={{ delay: 1.2, duration: 0.8 }}
+              className="absolute -top-12 -left-4 md:-top-16 md:-left-16 font-marathi text-2xl md:text-5xl text-[#4f46e5]/40 select-none hidden sm:block whitespace-nowrap"
+            >
+              Classy Edition
+            </motion.div>
+          </div>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-12">
             <a href="#tees" className="button-primary w-full md:w-auto text-center">

@@ -14,7 +14,7 @@ export default function Footer() {
               and pure street culture in Kandivali East. Representing the city, defining the fit.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/__classyco.__" className="p-3 bg-white/5 hover:bg-street-accent transition-colors">
+              <a href="https://instagram.com/__classyco.__" className="p-3 bg-white/5 hover:bg-[linear-gradient(45deg,#f09433_0%,#e6683c_25%,#dc2743_50%,#cc2366_75%,#bc1888_100%)] transition-colors">
                 <Instagram size={20} />
               </a>
             </div>

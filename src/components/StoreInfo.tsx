@@ -15,8 +15,16 @@ export default function StoreInfo() {
             viewport={{ once: true }}
           >
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Physical Base</span>
-            <h2 className="heading-bold text-4xl sm:text-7xl md:text-9xl mb-8 leading-tight">
+            <h2 className="heading-bold text-4xl sm:text-7xl md:text-9xl mb-8 leading-tight relative">
               MUMBAI<span className="text-street-accent">.</span>
+              <motion.span 
+                initial={{ opacity: 0, rotate: 20 }}
+                whileInView={{ opacity: 1, rotate: -12 }}
+                viewport={{ once: true }}
+                className="absolute -top-6 md:-top-12 right-0 md:-right-8 font-marathi text-2xl md:text-7xl text-street-accent/20 select-none pointer-events-none block"
+              >
+                मुंबई
+              </motion.span>
             </h2>
             <h3 className="heading-bold text-3xl mb-6">The Base.</h3>
             <p className="text-white/60 text-lg mb-8 md:mb-12 max-w-md leading-relaxed font-sans">
@@ -24,32 +32,42 @@ export default function StoreInfo() {
               and secure the latest drops in person. This is where the culture breathes.
             </p>
 
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="bg-street-accent p-3 rounded-none mt-1">
-                  <MapPin size={20} className="text-white" />
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="bg-street-accent p-3 rounded-none mt-1">
+                    <MapPin size={20} className="text-white" />
+                  </div>
+                  <a 
+                    href="https://maps.google.com/?q=Shop+No.+320,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai-400101"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-street-accent transition-colors"
+                  >
+                    <h4 className="font-bold uppercase tracking-widest text-xs text-street-accent mb-2">Location</h4>
+                    <p className="text-white font-sans">Shop No. 320, Hanuman Nagar,<br />Akurli Road, Kandivali (East),<br />Mumbai - 400101</p>
+                  </a>
                 </div>
-                <a 
-                  href="https://maps.google.com/?q=Shop+No.+320,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai-400101"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-street-accent transition-colors"
-                >
-                  <h4 className="font-bold uppercase tracking-widest text-xs text-street-accent mb-2">Location</h4>
-                  <p className="text-white font-sans">Shop No. 320, Hanuman Nagar,<br />Akurli Road, Kandivali (East),<br />Mumbai - 400101</p>
-                </a>
-              </div>
 
-              <div className="flex items-start gap-4">
-                <div className="bg-white/10 p-3 rounded-none mt-1">
-                  <Clock size={20} className="text-white" />
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/10 p-3 rounded-none mt-1">
+                    <Phone size={20} className="text-white" />
+                  </div>
+                  <a href="tel:+917738499923" className="hover:text-street-accent transition-colors">
+                    <h4 className="font-bold uppercase tracking-widest text-xs text-white/50 mb-2">Call Us</h4>
+                    <p className="text-white font-sans">+91 77384 99923</p>
+                  </a>
                 </div>
-                <div>
-                  <h4 className="font-bold uppercase tracking-widest text-xs text-white/50 mb-2">Hours</h4>
-                  <p className="text-white font-sans">11:00 AM — 09:30 PM<br />Monday — Saturday</p>
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-white/10 p-3 rounded-none mt-1">
+                    <Clock size={20} className="text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold uppercase tracking-widest text-xs text-white/50 mb-2">Hours</h4>
+                    <p className="text-white font-sans">11:00 AM — 09:30 PM<br />Monday — Saturday</p>
+                  </div>
                 </div>
               </div>
-            </div>
 
             <motion.a 
               href="https://maps.google.com/?q=Shop+No.+320,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai-400101"

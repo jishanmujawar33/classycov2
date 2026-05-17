@@ -14,6 +14,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
   const navLinks = [
     { name: 'Lookbook', href: '#lookbook' },
     { name: 'Tees', href: '#tees' },
@@ -57,7 +65,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-white"
+          className="md:hidden text-white relative z-[70]"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -65,49 +73,48 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 bg-boutique-black z-[60] flex flex-col justify-center px-10"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 bg-black z-[60] flex flex-col justify-center items-start px-8 md:px-20"
           >
-            <button 
-              className="absolute top-8 right-6 text-white"
-              onClick={() => setIsOpen(false)}
-            >
-              <X size={32} />
-            </button>
-
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-4 md:space-y-6 w-full">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.name}
                   href={link.href}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * i }}
                   onClick={() => setIsOpen(false)}
-                  className="heading-bold text-5xl text-white hover:text-street-accent flex items-center group transition-colors"
+                  className="heading-bold text-5xl sm:text-6xl md:text-9xl text-white hover:text-street-accent flex items-center group transition-all duration-300 w-full"
                 >
-                  {link.name}
-                  <ArrowRight className="ml-4 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all" size={32} />
+                  <span className="group-hover:translate-x-4 transition-transform duration-300">
+                    {link.name}
+                  </span>
+                  <ArrowRight className="ml-6 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 transition-all hidden md:block" size={64} />
                 </motion.a>
               ))}
               
-              <motion.a
-                href="https://instagram.com/__classyco.__"
-                target="_blank"
-                rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="heading-bold text-5xl text-street-accent"
+                className="mt-12 pt-8 border-t border-white/10 w-full"
               >
-                @__classyco.__
-              </motion.a>
+                <a
+                  href="https://instagram.com/__classyco.__"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl md:text-3xl font-block text-street-accent hover:text-white transition-colors"
+                >
+                  @__classyco.__
+                </a>
+              </motion.div>
             </div>
           </motion.div>
         )}
