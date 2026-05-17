@@ -15,7 +15,7 @@ export default function StoreInfo() {
             viewport={{ once: true }}
           >
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Physical Base</span>
-            <h2 className="heading-bold text-5xl sm:text-7xl md:text-9xl mb-8 leading-tight">
+            <h2 className="heading-bold text-4xl sm:text-7xl md:text-9xl mb-8 leading-tight">
               MUMBAI<span className="text-street-accent">.</span>
             </h2>
             <h3 className="heading-bold text-3xl mb-6">The Base.</h3>

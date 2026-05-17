@@ -30,7 +30,7 @@ export default function Lookbook() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="heading-bold text-4xl sm:text-6xl md:text-8xl mb-8 leading-tight"
+            className="heading-bold text-3xl sm:text-6xl md:text-8xl mb-6 md:mb-8"
           >
             The <span className="text-street-accent">Collection.</span>
           </motion.h2>
