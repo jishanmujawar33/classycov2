@@ -35,8 +35,8 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Mumbai Born • Street Bred</span>
-          <h1 className="heading-bold text-3xl sm:text-7xl md:text-[10vw] mb-8 text-white">
-            The <br className="sm:hidden" /> New <br className="hidden md:block" /> Standard<span className="text-street-accent">.</span>
+          <h1 className="heading-bold text-5xl sm:text-7xl md:text-[7.5vw] lg:text-[7vw] xl:text-[110px] leading-none mb-8 text-white tracking-tighter">
+            The <br className="sm:hidden" /> New <br /> Standard<span className="text-street-accent absolute select-none">.</span>
           </h1>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
