@@ -1,4 +1,3 @@
-// Add your jeans images to /public/images/jeans/ and update the paths here
 export const JEANS = [
   { 
     id: 1, 
