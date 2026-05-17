@@ -3,23 +3,23 @@ import { MapPin, Clock, Phone } from 'lucide-react';
 
 export default function StoreInfo() {
   return (
-    <section id="store" className="py-24 bg-boutique-black relative overflow-hidden">
+    <section id="store" className="py-16 md:py-24 bg-boutique-black relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-street-accent/5 -skew-x-12 translate-x-1/2 pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Physical Base</span>
-            <h2 className="heading-bold text-5xl sm:text-7xl md:text-9xl mb-8 leading-none">
+            <h2 className="heading-bold text-4xl sm:text-7xl md:text-9xl mb-8 leading-none">
               MUMBAI<span className="text-street-accent">.</span>
             </h2>
             <h3 className="heading-bold text-3xl mb-6">The Base.</h3>
-            <p className="text-white/60 text-lg mb-12 max-w-md leading-relaxed font-sans">
+            <p className="text-white/60 text-lg mb-8 md:mb-12 max-w-md leading-relaxed font-sans">
               Located in the heart of Kandivali East. Come through to check the fits, feel the fabrics, 
               and secure the latest drops in person. This is where the culture breathes.
             </p>
@@ -51,9 +51,9 @@ export default function StoreInfo() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ x: 10 }}
-              className="inline-flex items-center gap-4 mt-12 group"
+              className="inline-flex items-center gap-4 mt-8 md:mt-12 group w-full md:w-auto"
             >
-              <span className="button-primary">Get Directions</span>
+              <span className="button-primary w-full text-center">Get Directions</span>
             </motion.a>
           </motion.div>
 

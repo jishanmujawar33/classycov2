@@ -23,14 +23,14 @@ const LOOKS = [
 
 export default function Lookbook() {
   return (
-    <section id="lookbook" className="py-24 bg-boutique-black overflow-hidden">
+    <section id="lookbook" className="py-16 md:py-24 bg-boutique-black overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <motion.h2 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="heading-bold text-5xl sm:text-6xl md:text-8xl mb-8"
+            className="heading-bold text-4xl sm:text-6xl md:text-8xl mb-8"
           >
             The <span className="text-street-accent">Collection.</span>
           </motion.h2>
@@ -38,7 +38,7 @@ export default function Lookbook() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-lg text-white/60 leading-relaxed font-sans"
+            className="text-base md:text-lg text-white/60 leading-relaxed font-sans"
           >
             Bridging the gap between luxury and the street. Our latest drop features heavy fabrics, 
             boxy silhouettes, and the specific fits you've seen on the feed. Every piece is 
