@@ -25,7 +25,7 @@ body {
 }
 
 .heading-bold {
-  @apply font-serif font-extrabold uppercase tracking-tighter leading-[0.9];
+  @apply font-serif font-extrabold uppercase tracking-tight leading-[0.95];
 }
 
 .nav-link {
