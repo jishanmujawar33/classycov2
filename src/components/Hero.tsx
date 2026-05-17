@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowDown, Instagram } from 'lucide-react';
+import logo from '../assets/images/logo.png';
 
 export default function Hero() {
   const whatsappNumber = "917738499923"; 
@@ -39,7 +40,7 @@ export default function Hero() {
           {/* Logo Background behind text */}
           <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-center -z-10 pointer-events-none">
             <img 
-              src="/images/logo.png" 
+              src={logo} 
               alt="" 
               className="w-[120vw] sm:w-[90vw] md:w-[70vw] max-w-[1200px] opacity-[0.05] scale-125"
             />
@@ -47,7 +48,7 @@ export default function Hero() {
 
           <div className="flex justify-center mb-8">
             <img 
-              src="/images/logo.png" 
+              src={logo} 
               alt="Street Core Logo" 
               className="w-28 sm:w-40 h-auto opacity-100 brightness-[2.5]"
             />
@@ -57,14 +58,6 @@ export default function Hero() {
             <h1 className="heading-bold text-3xl sm:text-7xl md:text-[10vw] mb-8 text-white leading-tight">
               The <br className="sm:hidden" /> New <br className="hidden md:block" /> Standard<span className="text-street-accent">.</span>
             </h1>
-            <motion.div 
-              initial={{ opacity: 0, rotate: -15, x: -20 }}
-              animate={{ opacity: 1, rotate: -15, x: 0 }}
-              transition={{ delay: 1.2, duration: 0.8 }}
-              className="absolute -top-12 -left-4 md:-top-16 md:-left-16 font-marathi text-2xl md:text-5xl text-[#4f46e5]/40 select-none hidden sm:block whitespace-nowrap"
-            >
-              Classy Edition
-            </motion.div>
           </div>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-12">

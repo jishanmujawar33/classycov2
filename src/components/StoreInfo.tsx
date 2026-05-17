@@ -17,14 +17,6 @@ export default function StoreInfo() {
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Physical Base</span>
             <h2 className="heading-bold text-4xl sm:text-7xl md:text-9xl mb-8 leading-tight relative">
               MUMBAI<span className="text-street-accent">.</span>
-              <motion.span 
-                initial={{ opacity: 0, rotate: 20 }}
-                whileInView={{ opacity: 1, rotate: -12 }}
-                viewport={{ once: true }}
-                className="absolute -top-6 md:-top-12 right-0 md:-right-8 font-marathi text-2xl md:text-7xl text-street-accent/20 select-none pointer-events-none block"
-              >
-                मुंबई
-              </motion.span>
             </h2>
             <h3 className="heading-bold text-3xl mb-6">The Base.</h3>
             <p className="text-white/60 text-lg mb-8 md:mb-12 max-w-md leading-relaxed font-sans">

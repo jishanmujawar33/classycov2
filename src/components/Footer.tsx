@@ -60,18 +60,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6 mb-8">
+        <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6">
           <p className="text-[10px] uppercase tracking-widest text-white/20">
             © 2024 Classyco Menswear. All rights reserved.
           </p>
-          <div className="flex flex-col items-center">
-            <span className="font-cursive text-street-accent text-3xl md:text-4xl opacity-50 select-none pointer-events-none">
-              Made in Mumbai
-            </span>
-            <span className="font-marathi text-[10px] text-white/10 uppercase tracking-[0.4em] -mt-2">
-              मुंबई मध्ये बनवलेले
-            </span>
-          </div>
           <div className="flex gap-8">
             <a href="#" className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="text-[10px] uppercase tracking-widest text-white/20 hover:text-white transition-colors">Terms of Service</a>
