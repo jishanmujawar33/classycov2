@@ -17,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Lookbook', href: '#lookbook' },
     { name: 'Tees', href: '#tees' },
+    { name: 'Jeans', href: '#jeans' },
     { name: 'The Store', href: '#store' },
     { name: 'Contact', href: '#contact' },
   ];

@@ -5,7 +5,7 @@ const LOOKS = [
     id: 1,
     title: "The Oversized Tee",
     description: "280 GSM heavy cotton with a signature boxy fit. Drop shoulders and high neck rib.",
-    image: "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1503342217505-b1a15ec5265f?auto=format&fit=crop&q=80&w=800",
   },
   {
     id: 2,

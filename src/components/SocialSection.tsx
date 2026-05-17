@@ -3,7 +3,7 @@ import { Instagram } from 'lucide-react';
 
 const POSTS = [
   { id: 1, image: "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&q=80&w=400" },
-  { id: 2, image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=400" },
+  { id: 2, image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=400" },
   { id: 3, image: "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?auto=format&fit=crop&q=80&w=400" },
   { id: 4, image: "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&q=80&w=400" },
 ];
@@ -21,7 +21,7 @@ export default function SocialSection() {
             href="https://instagram.com/__classyco.__" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-4 bg-white/5 px-8 py-4 hover:bg-street-accent transition-colors group w-full md:w-auto justify-center"
+            className="flex items-center gap-4 bg-white/5 px-8 py-4 hover:bg-street-accent transition-colors group"
           >
             <Instagram size={24} className="group-hover:rotate-12 transition-transform" />
             <span className="font-classyco tracking-widest text-sm">@__classyco.__</span>

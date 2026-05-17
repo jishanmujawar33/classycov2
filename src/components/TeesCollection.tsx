@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 
 const TEES = [
-  { id: 1, name: "Midnight Boxy Tee", price: "₹1,499", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=600" },
-  { id: 2, name: "Street Core White", price: "₹1,499", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600" },
+  { id: 1, name: "Midnight Boxy Tee", price: "₹1,499", image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600" },
+  { id: 2, name: "Street Core White", price: "₹1,499", image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=600" },
   { id: 3, name: "Archive Heavy Fit", price: "₹1,799", image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=600" },
   { id: 4, name: "Essential Oversize", price: "₹1,299", image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=600" },
 ];
@@ -11,7 +11,7 @@ export default function TeesCollection() {
   return (
     <section id="tees" className="py-16 md:py-24 bg-black">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16 gap-6">
           <div>
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Essentials</span>
             <h2 className="heading-bold text-3xl sm:text-6xl">Tees Collection</h2>

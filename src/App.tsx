@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Lookbook from './components/Lookbook';
 import TeesCollection from './components/TeesCollection';
+import JeansCollection from './components/JeansCollection';
 import StoreInfo from './components/StoreInfo';
 import SocialSection from './components/SocialSection';
 import WhatsAppFAB from './components/WhatsAppFAB';
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Lookbook />
         <TeesCollection />
+        <JeansCollection />
         <StoreInfo />
         <SocialSection />
       </main>

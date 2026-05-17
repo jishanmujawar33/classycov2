@@ -33,11 +33,11 @@ body {
 }
 
 .button-primary {
-  @apply bg-white text-black px-6 py-3 sm:px-8 sm:py-4 text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all rounded-none hover:bg-street-accent hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)];
+  @apply bg-white text-black px-8 py-4 text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all rounded-none hover:bg-street-accent hover:text-white hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)];
 }
 
 .button-outline {
-  @apply border-2 border-white px-6 py-3 sm:px-8 sm:py-4 text-[10px] md:text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-none;
+  @apply border-2 border-white px-8 py-4 text-[10px] md:text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all rounded-none;
 }
 
 .marquee-text {
