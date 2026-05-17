@@ -11,7 +11,7 @@ export default function TeesCollection() {
   return (
     <section id="tees" className="py-16 md:py-24 bg-black">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-16 gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-6">
           <div>
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Essentials</span>
             <h2 className="heading-bold text-3xl sm:text-6xl">Tees Collection</h2>

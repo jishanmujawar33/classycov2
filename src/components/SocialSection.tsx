@@ -21,7 +21,7 @@ export default function SocialSection() {
             href="https://instagram.com/__classyco.__" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-4 bg-white/5 px-8 py-4 hover:bg-street-accent transition-colors group"
+            className="flex items-center gap-4 bg-white/5 px-8 py-4 hover:bg-street-accent transition-colors group w-full md:w-auto justify-center"
           >
             <Instagram size={24} className="group-hover:rotate-12 transition-transform" />
             <span className="font-classyco tracking-widest text-sm">@__classyco.__</span>
