@@ -41,7 +41,7 @@ body {
 }
 
 .marquee-text {
-  @apply whitespace-nowrap font-serif text-[120px] font-extrabold uppercase opacity-5 select-none pointer-events-none;
+  @apply whitespace-nowrap font-serif text-[60px] md:text-[120px] font-extrabold uppercase opacity-5 select-none pointer-events-none;
 }
 
 /* Custom Scrollbar */

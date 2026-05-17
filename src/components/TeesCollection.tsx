@@ -14,7 +14,7 @@ export default function TeesCollection() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div>
             <span className="font-angular text-street-accent tracking-widest uppercase mb-4 block">Essentials</span>
-            <h2 className="heading-bold text-6xl">Tees Collection</h2>
+            <h2 className="heading-bold text-4xl sm:text-6xl">Tees Collection</h2>
           </div>
           <button className="nav-link border-b border-white pb-1 group flex items-center">
             View All Drops <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
