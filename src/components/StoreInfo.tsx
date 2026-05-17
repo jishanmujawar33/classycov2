@@ -29,10 +29,15 @@ export default function StoreInfo() {
                 <div className="bg-street-accent p-3 rounded-none mt-1">
                   <MapPin size={20} className="text-white" />
                 </div>
-                <div>
+                <a 
+                  href="https://maps.google.com/?q=Shop+No.+320,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai-400101"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-street-accent transition-colors"
+                >
                   <h4 className="font-bold uppercase tracking-widest text-xs text-street-accent mb-2">Location</h4>
                   <p className="text-white font-sans">Shop No. 320, Hanuman Nagar,<br />Akurli Road, Kandivali (East),<br />Mumbai - 400101</p>
-                </div>
+                </a>
               </div>
 
               <div className="flex items-start gap-4">

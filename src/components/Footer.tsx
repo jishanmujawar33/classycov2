@@ -33,17 +33,28 @@ export default function Footer() {
           <div>
             <h4 className="font-angular text-white uppercase tracking-widest text-sm mb-8">Connect</h4>
             <ul className="space-y-6">
-              <li className="flex items-center gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
-                <Phone size={18} className="text-street-accent" />
-                <span className="text-sm font-sans">+91 77384 99923</span>
+              <li>
+                <a href="tel:+917738499923" className="flex items-center gap-4 text-white/60 hover:text-white transition-colors">
+                  <Phone size={18} className="text-street-accent" />
+                  <span className="text-sm font-sans">+91 77384 99923</span>
+                </a>
               </li>
-              <li className="flex items-center gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
-                <Mail size={18} className="text-street-accent" />
-                <span className="text-sm font-sans">contact@classyco.in</span>
+              <li>
+                <a href="mailto:contact@classyco.in" className="flex items-center gap-4 text-white/60 hover:text-white transition-colors">
+                  <Mail size={18} className="text-street-accent" />
+                  <span className="text-sm font-sans">contact@classyco.in</span>
+                </a>
               </li>
-              <li className="flex items-start gap-4 text-white/60 hover:text-white transition-colors cursor-pointer">
-                <MapPin size={18} className="text-street-accent mt-1" />
-                <span className="text-sm font-sans">Shop 320, Hanuman Nagar,<br />Kandivali East, Mumbai</span>
+              <li>
+                <a 
+                  href="https://maps.google.com/?q=Shop+No.+320,+Hanuman+Nagar,+Akurli+Road,+Kandivali+East,+Mumbai-400101" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 text-white/60 hover:text-white transition-colors"
+                >
+                  <MapPin size={18} className="text-street-accent mt-1" />
+                  <span className="text-sm font-sans">Shop 320, Hanuman Nagar,<br />Kandivali East, Mumbai</span>
+                </a>
               </li>
             </ul>
           </div>
