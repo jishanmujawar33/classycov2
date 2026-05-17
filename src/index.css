@@ -25,7 +25,7 @@ body {
 }
 
 .heading-bold {
-  @apply font-serif font-extrabold uppercase tracking-tight leading-[0.95];
+  @apply font-serif font-extrabold uppercase tracking-normal leading-[1.1] md:tracking-tighter md:leading-[0.9];
 }
 
 .nav-link {
@@ -41,7 +41,7 @@ body {
 }
 
 .marquee-text {
-  @apply whitespace-nowrap font-serif text-[60px] md:text-[120px] font-extrabold uppercase opacity-5 select-none pointer-events-none;
+  @apply whitespace-nowrap font-serif text-[50px] md:text-[120px] font-extrabold uppercase opacity-5 select-none pointer-events-none;
 }
 
 /* Custom Scrollbar */

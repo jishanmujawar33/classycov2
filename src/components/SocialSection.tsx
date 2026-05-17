@@ -14,8 +14,8 @@ export default function SocialSection() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between mb-10 md:mb-16 gap-8">
           <div>
-            <h2 className="heading-bold text-3xl sm:text-6xl md:text-8xl mb-4">Social Archive<span className="text-street-accent">.</span></h2>
-            <p className="text-white/40 uppercase tracking-[0.3em] font-bold text-xs">Stay updated with the latest drops and lifestyle.</p>
+            <h2 className="heading-bold text-3xl sm:text-6xl md:text-8xl mb-4 leading-tight">Social Archive<span className="text-street-accent">.</span></h2>
+            <p className="text-white/40 uppercase tracking-[0.3em] font-bold text-[10px] md:text-xs">Stay updated with the latest drops and lifestyle.</p>
           </div>
           <a 
             href="https://instagram.com/__classyco.__" 
