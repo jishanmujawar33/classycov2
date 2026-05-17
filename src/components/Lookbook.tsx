@@ -1,29 +1,25 @@
 import { motion } from 'motion/react';
 
-import tee1 from '../assets/images/tees/tees_1.webp';
-import tee2 from '../assets/images/tees/tees_2.webp';
-import tee3 from '../assets/images/tees/tees_3.webp';
-
 const LOOKS = [
   {
     id: 1,
     title: "The Oversized Tee",
     description: "280 GSM heavy cotton with a signature boxy fit. Drop shoulders and high neck rib.",
-    image: tee1,
+    image: "/images/tees/tees_1.webp",
     link: "#tees"
   },
   {
     id: 2,
     title: "Street Culture",
     description: "Bridging architectural lines with fluid street movement. Designed for the city.",
-    image: tee2,
+    image: "/images/tees/tees_2.webp",
     link: "#tees"
   },
   {
     id: 3,
     title: "Minimal Luxe",
     description: "Subtle branding and premium materials. Luxury you can feel and wear every day.",
-    image: tee3,
+    image: "/images/tees/tees_3.webp",
     link: "#tees"
   }
 ];
